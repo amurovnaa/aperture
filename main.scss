@@ -87,11 +87,35 @@ body {
     }
   }
 }
-.sec-6{
+.sec4{
+  background: url("./img/bgsec-4.svg");
+  width: 100%;
+  padding:0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  .sec4-content{
+    height: 545px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 46px;
 
-  .container{
-    max-width: 1440px;
   }
+  h2{
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    line-height: 143%;
+    color: $white-text;
+  }
+  .svg-position{
+
+  }
+}
+.sec-6{
   .sec6-flex {
   display: flex;
   justify-content: space-between;
@@ -131,11 +155,10 @@ body {
     width: 720px;
     height: 540px;
     .svg-position{
-      padding: 485px 40px 0 ;
+      padding: 486px 40px 0 ;
     }
   }
 }
-
 
 
 .footer {

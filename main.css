@@ -73,8 +73,29 @@ header .header-links .btn {
   }
 }
 
-.sec-6 .container {
-  max-width: 1440px;
+.sec4 {
+  background: url("./img/bgsec-4.svg");
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.sec4 .sec4-content {
+  height: 545px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 46px;
+}
+.sec4 h2 {
+  margin: 0;
+  padding: 0;
+}
+.sec4 p {
+  line-height: 143%;
+  color: #C0C0C0;
 }
 .sec-6 .sec6-flex {
   display: flex;
@@ -115,7 +136,7 @@ header .header-links .btn {
   height: 540px;
 }
 .sec-6 .sec6-part2 .svg-position {
-  padding: 485px 40px 0;
+  padding: 486px 40px 0;
 }
 
 .footer {
