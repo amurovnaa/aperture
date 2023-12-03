@@ -73,11 +73,13 @@ header {
   .btn {
     font-size: 16px;
     padding: 11px 20px 13px;
-    background: $white;
     letter-spacing: 0.4px;
     color: $black;
     border-radius: 14px;
   }
+    .btn-header{
+      background:$white;
+    }
 }
 }
 body {
@@ -149,6 +151,7 @@ body {
     padding: 5px 10px 5px 4px;
     font-size: 16px;
     line-height: 125%;
+    background: $white;
   }
   .sec6-part2{
     background: url("./img/sec6.svg");
@@ -191,7 +194,7 @@ body {
     width: 154px;
     font-size: 16px;
     line-height: 125%;
-
+    background: $white;
   }
 }
 .footer {
