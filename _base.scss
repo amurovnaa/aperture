@@ -1,20 +1,22 @@
 body {
   a {
-    box-shadow: inset 1px 0  black;
+    box-shadow: inset 1px 0 black;
     color: white;
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 
   }
+
   a:hover {
     box-shadow: inset 150px 0 0 0 rosybrown;
     color: white;
   }
 
-  .btn-header{
+  .btn-header {
     border: 3px solid white;
   }
+
   .btn-header:hover, .circled:hover, .btn-long:hover {
-    border:  3px solid black;
-    background:white;
+    border: 3px solid black;
+    background: white;
   }
 }

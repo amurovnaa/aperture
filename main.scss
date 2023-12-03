@@ -66,22 +66,24 @@ header {
     font-size: 15px;
     color: $white;
 
-  .header-links .btn {
-    min-width: 155px;
-  }
-
-  .btn {
-    font-size: 16px;
-    padding: 11px 20px 13px;
-    letter-spacing: 0.4px;
-    color: $black;
-    border-radius: 14px;
-  }
-    .btn-header{
-      background:$white;
+    .header-links .btn {
+      min-width: 155px;
     }
+
+    .btn {
+      font-size: 16px;
+      padding: 11px 20px 13px;
+      letter-spacing: 0.4px;
+      color: $black;
+      border-radius: 14px;
+    }
+
+    .btn-header {
+      background: $white;
+    }
+  }
 }
-}
+
 body {
   @media (max-width: 750px) {
     .container {
@@ -89,14 +91,16 @@ body {
     }
   }
 }
-.sec4{
+
+.sec4 {
   background: url("./img/bgsec-4.svg");
   width: 100%;
-  padding:0;
+  padding: 0;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  .sec4-content{
+
+  .sec4-content {
     height: 545px;
     max-width: 300px;
     display: flex;
@@ -105,47 +109,56 @@ body {
     margin-right: 46px;
 
   }
-  h2{
+
+  h2 {
     margin: 0;
     padding: 0;
   }
-  p{
+
+  p {
     line-height: 143%;
     color: $white-text;
   }
-  .svg-position{
+
+  .svg-position {
     padding: 0 45px 45px 0;
   }
 }
-.sec-6{
+
+.sec-6 {
   .sec6-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-  .sec6-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sec6-part1 {
     max-width: 600px;
     padding: 60px 46px 40px 100px;
   }
-  h2{
+
+  h2 {
     padding: 0 0 6px 0;
     margin: 0;
     color: $white-text;
 
   }
-  h3{
+
+  h3 {
     color: $white;
     font-size: 28px;
     line-height: 114%;
     padding-bottom: 14px;
   }
-  p{
+
+  p {
     color: $white;
     font-size: 14px;
     line-height: 142%;
     padding-bottom: 20px;
   }
-  .circled{
+
+  .circled {
     margin: 0;
     min-width: 152px;
     padding: 5px 10px 5px 4px;
@@ -153,43 +166,47 @@ body {
     line-height: 125%;
     background: $white;
   }
-  .sec6-part2{
+
+  .sec6-part2 {
     background: url("./img/sec6.svg");
     width: 720px;
     height: 540px;
-    .svg-position{
-      padding: 485px 40px 0 ;
+
+    .svg-position {
+      padding: 485px 40px 0;
     }
   }
 }
-.sec-5{
+
+.sec-5 {
   background: $black;
 
-.sec5-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding-bottom: 108px;
-  padding-top: 113px;
-}
+  .sec5-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 108px;
+    padding-top: 113px;
+  }
 
-.sec5-flex h1 {
-  color: $white;
-  font-size: 40px;
-  line-height: 105%;
-  max-width: 571px;
-  text-align: center;
-}
+  .sec5-flex h1 {
+    color: $white;
+    font-size: 40px;
+    line-height: 105%;
+    max-width: 571px;
+    text-align: center;
+  }
 
-.sec5-flex p {
-  font-size: 24px;
-  max-width: 224px;
-  line-height: 125%;
-  padding-bottom: 7px;
-}
-  .circled{
+  .sec5-flex p {
+    font-size: 24px;
+    max-width: 224px;
+    line-height: 125%;
+    padding-bottom: 7px;
+  }
+
+  .circled {
     margin: 0;
     width: 154px;
     font-size: 16px;
@@ -197,129 +214,130 @@ body {
     background: $white;
   }
 }
+
 .footer {
-    background: $black;
-    display: flex;
-    flex-direction: column;
-  margin-top: 100px ;
-  }
+  background: $black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
 
-  .footer-part1, .footer-part2, .footer-part3 {
-    display: flex;
-    color: white;
-    justify-content: space-between;
+.footer-part1, .footer-part2, .footer-part3 {
+  display: flex;
+  color: white;
+  justify-content: space-between;
 
-  }
+}
 
-  .logo {
-    display: inline-flex;
-    padding: 0 18px 129px 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 460px;
-    color: $white-text;
-    font-size: 13px;
-    line-height: 154%;
-    margin-right: 252px;
-  }
+.logo {
+  display: inline-flex;
+  padding: 0 18px 129px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 460px;
+  color: $white-text;
+  font-size: 13px;
+  line-height: 154%;
+  margin-right: 252px;
+}
 
-  .bs-areas {
-    color: $white;
-    flex-direction: column;
-    gap: 10px;
-    display: inline-flex;
-    padding: 0 39px 60px 0;
-    align-items: flex-start;
-    max-height: 200px;
-    max-width: 220px;
-    margin-right: 16px;
+.bs-areas {
+  color: $white;
+  flex-direction: column;
+  gap: 10px;
+  display: inline-flex;
+  padding: 0 39px 60px 0;
+  align-items: flex-start;
+  max-height: 200px;
+  max-width: 220px;
+  margin-right: 16px;
 
-  }
+}
 
-  .pages {
-    color: $white;
-    flex-direction: column;
-    gap: 10px;
-    display: inline-flex;
-    align-items: flex-start;
-    max-height: 200px;
-    max-width: 220px;
-    margin-right: 101px;
-  }
-
-
-  .bs-areas span:first-child, .pages span:first-child, .part2-text p:first-child {
-    color: $white-text;
-    line-height: 143%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  hr {
-    min-width: 100%;
-    min-height: 2px;
-    border-bottom: 2px solid $white;
-    margin: 36px 0;
-  }
-
-  .footer-part2 {
-    height: 60px;
-    align-items: center;
-  }
-
-  .part2-text {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    color: $white-text;
-    font-size: 13px;
-    line-height: 154%;
-  }
-
-  .part2-text p:first-child {
-
-    color: $white;
-    margin-bottom: 20px;
-  }
-
-  .btn-long {
-    width: 458px;
-    height: 52px;
-    border-radius: 12px;
-    border: 1px solid #E5E7EB;
-    background: #F9FAFB;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .btn-long:after {
-    content: "";
-    background: url("./img/btn-long.png");
-    margin-right: 6px;
-    width: 63px;
-    height: 30px;
+.pages {
+  color: $white;
+  flex-direction: column;
+  gap: 10px;
+  display: inline-flex;
+  align-items: flex-start;
+  max-height: 200px;
+  max-width: 220px;
+  margin-right: 101px;
+}
 
 
-  }
+.bs-areas span:first-child, .pages span:first-child, .part2-text p:first-child {
+  color: $white-text;
+  line-height: 143%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-  .part3-text {
-    max-width: 694px;
-    height: 24px;
-    color: $white-text;
-    font-style: normal;
-    line-height: 143%;
-  }
+hr {
+  min-width: 100%;
+  min-height: 2px;
+  border-bottom: 2px solid $white;
+  margin: 36px 0;
+}
 
-  .svg-media {
-    display: flex;
-    max-width: 112px;
-    max-height: 24px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-  }
+.footer-part2 {
+  height: 60px;
+  align-items: center;
+}
+
+.part2-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: $white-text;
+  font-size: 13px;
+  line-height: 154%;
+}
+
+.part2-text p:first-child {
+
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.btn-long {
+  width: 458px;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  background: #F9FAFB;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-long:after {
+  content: "";
+  background: url("./img/btn-long.png");
+  margin-right: 6px;
+  width: 63px;
+  height: 30px;
+
+
+}
+
+.part3-text {
+  max-width: 694px;
+  height: 24px;
+  color: $white-text;
+  font-style: normal;
+  line-height: 143%;
+}
+
+.svg-media {
+  display: flex;
+  max-width: 112px;
+  max-height: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
 
 .footer {
   @media(max-width: 965px) {
@@ -361,21 +379,21 @@ body {
       }
     }
     @media (min-width: 318px) {
-      }
-      .btn-long {
-        margin-top: 55px;
-        max-width: 75px;
-        max-height: 40px;
-      }
-      .logo, .logo p, .pages {
-        margin-right: 0;
-        padding-right: 0;
-      }
-      .bs-areas {
-        width: 0;
-      }
+    }
+    .btn-long {
+      margin-top: 55px;
+      max-width: 75px;
+      max-height: 40px;
+    }
+    .logo, .logo p, .pages {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .bs-areas {
+      width: 0;
     }
   }
+}
 
 
 

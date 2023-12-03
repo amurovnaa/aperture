@@ -6,15 +6,18 @@
     --border-button: 14px;
 
 }
-.container-1{
+
+.container-1 {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .sec1 {
     background: url("../img/bgsec-1.png");
     padding: 0;
     margin-top: 90px;
 }
+
 .sec1-flex {
     max-width: 600px;
     margin: 0 auto;
