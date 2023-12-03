@@ -97,6 +97,10 @@ header .header-links .btn {
   line-height: 143%;
   color: #C0C0C0;
 }
+.sec4 .svg-position {
+  padding: 0 45px 45px 0;
+}
+
 .sec-6 .sec6-flex {
   display: flex;
   justify-content: space-between;
@@ -136,7 +140,39 @@ header .header-links .btn {
   height: 540px;
 }
 .sec-6 .sec6-part2 .svg-position {
-  padding: 486px 40px 0;
+  padding: 485px 40px 0;
+}
+
+.sec-5 {
+  background: black;
+}
+.sec-5 .sec5-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 108px;
+  padding-top: 113px;
+}
+.sec-5 .sec5-flex h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 105%;
+  max-width: 571px;
+  text-align: center;
+}
+.sec-5 .sec5-flex p {
+  font-size: 24px;
+  max-width: 224px;
+  line-height: 125%;
+  padding-bottom: 7px;
+}
+.sec-5 .circled {
+  margin: 0;
+  width: 154px;
+  font-size: 16px;
+  line-height: 125%;
 }
 
 .footer {
