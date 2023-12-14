@@ -167,15 +167,17 @@ body {
     background: $white;
   }
 
-  .sec6-part2 {
-    background: url("./img/sec6.svg");
-    width: 720px;
-    height: 540px;
-
-    .svg-position {
-      padding: 485px 40px 0;
-    }
+  .sec6-part2 img{
+    min-width: 100%;
+    min-height: 100%;
   }
+
+  .svg-position {
+    padding: 0 45px 0 0;
+    position: relative;
+    bottom: 60px;
+  }
+
 }
 
 .sec-5 {
@@ -219,7 +221,7 @@ body {
   background: $black;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .footer-part1, .footer-part2, .footer-part3 {
@@ -282,9 +284,10 @@ hr {
 }
 
 .footer-part2 {
-  height: 60px;
+
   align-items: center;
 }
+
 
 .part2-text {
   display: flex;
@@ -342,59 +345,80 @@ hr {
 .footer {
   @media(max-width: 965px) {
     .logo {
-      margin: 0 140px 0 0;
-      padding-right: 0;
+
       max-width: 400px;
     }
     .btn-long {
       max-width: 350px;
     }
     .pages {
-      margin: 0 0 0 35px;
+      margin: 0;
     }
   }
-  @media(max-width: 750px) {
+  @media(max-width: 850px) {
     .logo {
       margin: 0 58px 0 0;
     }
+  }
+  @media (max-width: 630px) {
     .btn-long {
       max-width: 200px;
     }
   }
-  @media(max-width: 530px) {
-    .btn-long {
-      max-width: 100px;
-      padding: 0;
-    }
-    .bs-areas {
-      margin-right: 0;
-    }
-  }
-  @media (max-width: 530px) {
-    .logo {
-      margin: 0 70px 0 0;
+  @media (max-width: 450px) {
+    .footer-part1 {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 7px;
 
-      .btn-long {
-        max-width: 150px;
+      .logo, .bs-areas, .pages {
+        margin: 0;
+        padding-bottom: 30px;
+      }
+
+      .logo p {
+        max-width: 250px;
       }
     }
-    @media (min-width: 318px) {
+    .footer-part2 {
+      .part2-text {
+        padding-left: 10px;
+
+      }
+      .btn-long {
+        max-width: 122px;
+      }
     }
-    .btn-long {
-      margin-top: 55px;
-      max-width: 75px;
-      max-height: 40px;
-    }
-    .logo, .logo p, .pages {
-      margin-right: 0;
-      padding-right: 0;
-    }
-    .bs-areas {
-      width: 0;
+    .footer-part3 {
+      .part3-text {
+        padding-left: 10px;
+        max-width: 245px;
+      }
     }
   }
 }
 
 
+.sec-6 {
+  @media(max-width: 1024px) {
+    .sec6-part1 {
+      padding: 40px 25px;
+      max-width: 450px;
 
+    }
+  }
+
+  @media (max-width: 850px) {
+    .sec6-flex {
+      flex-direction: column;
+    }
+    .sec6-part1 {
+      max-width: 800px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+  }
+}
 
