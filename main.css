@@ -15,6 +15,95 @@ body .btn-header:hover, body .circled:hover, body .btn-long:hover {
   background: white;
 }
 
+@media (max-width: 965px) {
+  .footer .logo {
+    max-width: 400px;
+  }
+  .footer .btn-long {
+    max-width: 350px;
+  }
+  .footer .pages {
+    margin: 0;
+  }
+}
+@media (max-width: 850px) {
+  .footer .logo {
+    margin: 0 58px 0 0;
+  }
+}
+@media (max-width: 630px) {
+  .footer .btn-long {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 912px) {
+  .sec-6 .sec6-flex {
+    flex-direction: column;
+  }
+  .sec-6 .sec6-flex .sec6-part1 {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+  }
+  .sec-6 .sec6-flex .sec6-part2 {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .sec-6 .sec6-flex img {
+    max-height: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .sec1 {
+    margin: 0;
+  }
+  .sec1 .sec1-flex p:first-child {
+    padding-top: 341px;
+  }
+  .sec1 .sec1-flex p:last-child {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .sec1 .svg-position {
+    padding: 14px 25px 41px;
+  }
+  .sec2 .sec2-content p {
+    font-size: 17px;
+  }
+  .sec2 .card {
+    padding: 0 0 30px 10px;
+  }
+  .sec4 .sec4-content {
+    padding: 10px;
+  }
+  .footer-part1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 7px;
+  }
+  .footer-part1 .logo, .footer-part1 .bs-areas, .footer-part1 .pages {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .footer-part1 .logo p {
+    max-width: 250px;
+  }
+  .footer-part2 .part2-text {
+    padding-left: 10px;
+    max-width: 180px;
+  }
+  .footer-part2 .btn-long {
+    max-width: 122px;
+  }
+  .footer-part3 .part3-text {
+    padding-left: 10px;
+    max-width: 245px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -120,14 +209,18 @@ header .header-links .btn-header {
   padding: 0 45px 45px 0;
 }
 
+.sec-6 {
+  position: relative;
+}
 .sec-6 .sec6-flex {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .sec-6 .sec6-part1 {
-  max-width: 600px;
-  padding: 60px 46px 40px 100px;
+  width: 50%;
+  padding: 0 100px;
 }
 .sec-6 h2 {
   padding: 0 0 6px 0;
@@ -145,6 +238,7 @@ header .header-links .btn-header {
   font-size: 14px;
   line-height: 142%;
   padding-bottom: 20px;
+  max-width: 514px;
 }
 .sec-6 .circled {
   margin: 0;
@@ -154,9 +248,14 @@ header .header-links .btn-header {
   line-height: 125%;
   background: white;
 }
+.sec-6 .sec6-part2 {
+  position: relative;
+  width: 50%;
+}
 .sec-6 .sec6-part2 img {
-  min-width: 100%;
   min-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .sec-6 .svg-position {
   padding: 0 45px 0 0;
@@ -312,98 +411,6 @@ hr {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-}
-
-@media (max-width: 965px) {
-  .footer .logo {
-    max-width: 400px;
-  }
-  .footer .btn-long {
-    max-width: 350px;
-  }
-  .footer .pages {
-    margin: 0;
-  }
-}
-@media (max-width: 850px) {
-  .footer .logo {
-    margin: 0 58px 0 0;
-  }
-}
-@media (max-width: 630px) {
-  .footer .btn-long {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .sec-6 .sec6-part1 {
-    padding: 40px 60px;
-    max-width: 450px;
-  }
-}
-@media (max-width: 850px) {
-  .sec-6 .sec6-flex {
-    flex-direction: column;
-  }
-  .sec-6 .sec6-part1 {
-    padding: 40px 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 576px) {
-  .sec1 {
-    margin: 0;
-  }
-  .sec1 .sec1-flex p:first-child {
-    padding-top: 341px;
-  }
-  .sec1 .sec1-flex p:last-child {
-    padding: 0 10px;
-    text-align: left;
-  }
-  .sec1 .svg-position {
-    padding: 14px 25px 41px;
-  }
-  .sec2 .sec2-content p {
-    font-size: 17px;
-  }
-  .sec2 .card {
-    padding: 0 0 30px 10px;
-  }
-  .sec4 .sec4-content {
-    margin: 0;
-  }
-  .sec6-part1 p {
-    text-align: left;
-  }
-  .footer-part1 {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 7px;
-  }
-  .footer-part1 .logo, .footer-part1 .bs-areas, .footer-part1 .pages {
-    margin: 0;
-    padding-bottom: 30px;
-  }
-  .footer-part1 .logo p {
-    max-width: 250px;
-  }
-  .footer-part2 .part2-text {
-    padding-left: 10px;
-    max-width: 180px;
-  }
-  .footer-part2 .btn-long {
-    max-width: 122px;
-  }
-  .footer-part3 .part3-text {
-    padding-left: 10px;
-    max-width: 245px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
