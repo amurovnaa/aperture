@@ -390,34 +390,37 @@ hr {
 }
 
 @media (max-width: 576px) {
-  .sec1{
+  .sec1 {
     margin: 0;
-    .sec1-flex p:first-child{
-    padding-top: 341px;
-  }
-    .sec1-flex p:last-child{
+
+    .sec1-flex p:first-child {
+      padding-top: 341px;
+    }
+
+    .sec1-flex p:last-child {
       padding: 0 10px;
       text-align: left;
     }
-    .svg-position{
+
+    .svg-position {
       padding: 14px 25px 41px;
     }
   }
   .sec2 {
-   .sec2-content p {
-     font-size: 17px;
-   }
+    .sec2-content p {
+      font-size: 17px;
+    }
 
-   .card {
-     padding: 0 0 30px 10px;
-   }
- }
+    .card {
+      padding: 0 0 30px 10px;
+    }
+  }
   .sec4 {
     .sec4-content {
       margin: 0;
     }
   }
-  .sec6-part1 p{
+  .sec6-part1 p {
     text-align: left;
   }
 
