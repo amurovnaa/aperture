@@ -39,7 +39,10 @@ body {
 body {
   @media (max-width: 750px) {
     .container {
-      padding: 0 5px;
+      padding: 0 10px;
+    }
+    .container-1{
+      padding: 0 10px;
     }
   }
 }
@@ -79,6 +82,7 @@ body {
 
 .sec-6 {
   position: relative;
+
   .sec6-flex {
     margin-top: 20px;
     display: flex;

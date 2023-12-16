@@ -27,20 +27,23 @@
   .sec-6 {
     .sec6-flex {
       flex-direction: column;
+
       .sec6-part1 {
-        padding: 10px;
+        padding: 10px 0;
         width: 100%;
         display: flex;
         align-items: center;
         text-align: center;
         flex-direction: column;
       }
+
       .sec6-part2 {
         padding-top: 10px;
         width: 100%;
       }
+
       img {
-          max-height: 500px;
+        max-height: 500px;
       }
     }
   }
@@ -55,7 +58,6 @@
     }
 
     .sec1-flex p:last-child {
-      padding: 0 10px;
       text-align: left;
     }
 
@@ -64,26 +66,24 @@
     }
   }
   .sec2 {
+    .card-wrapper{
+      padding: 0;
+      gap: 10px;
+    }
     .sec2-content p {
-      font-size: 17px;
     }
 
     .card {
-      padding: 0 0 30px 10px;
+      padding: 0 0 30px 5px;
     }
   }
-  .sec4 {
-    .sec4-content {
-      padding: 10px;
-    }
-  }
+
   .sec6-part1 p {
     text-align: left;
   }
   .footer-part1 {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 7px;
 
     .logo, .bs-areas, .pages {
       margin: 0;
@@ -97,7 +97,6 @@
 
   .footer-part2 {
     .part2-text {
-      padding-left: 10px;
       max-width: 180px;
     }
 
@@ -107,7 +106,7 @@
   }
   .footer-part3 {
     .part3-text {
-      padding-left: 10px;
+      margin-bottom: 30px;
       max-width: 245px;
     }
   }

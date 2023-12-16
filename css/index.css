@@ -6,16 +6,19 @@
     --border-button: 14px;
 
 }
-.container-1{
+
+.container-1 {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .sec1 {
     background: url("../img/bgsec-1.png");
     width: 100%;
     padding: 0;
     margin-top: 90px;
 }
+
 .sec1-flex {
     max-width: 600px;
     margin: 0 auto;
@@ -87,42 +90,49 @@
     padding-bottom: 40px;
 }
 
+.card-content p {
+    font-size: 14px;
+    line-height: 142%;
+    color: var(--white-text);
+    height: 100%;
+    max-width: 545px;
+    margin-top: 10px;
+}
+
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-
-
 }
 
-.card1 {
+.card {
+    display: flex;
     max-width: 576px;
     width: 100%;
-    max-height: 600px;
-    background: url("../img/card1.svg");
-
+    height: 600px;
+    padding: 30px;
 }
 
-.card2 {
-    max-width: 576px;
-    width: 100%;
-    max-height: 600px;
+.bg1 {
+    background: url("../img/card1.svg")
+}
+
+.bg2 {
     background: url("../img/card2.svg");
+
 }
 
-.card3 {
-    max-width: 576px;
-    width: 100%;
-    max-height: 600px;
+.bg3 {
     background: url("../img/card3.svg");
 }
 
-.card4 {
-    max-width: 576px;
-    width: 100%;
-    max-height: 599px;
+.bg4 {
     background: url("../img/card4.svg");
+
+    . p {
+        max-width: 480px;
+    }
 }
 
 h2 {
@@ -130,29 +140,12 @@ h2 {
     color: var(--white);
     text-transform: uppercase;
     line-height: 143%;
-    padding-left: 30px;
-    margin-top: 421px;
 }
 
-.card1 p, .card2 p, .card3 p, .card4 p {
-    font-size: 14px;
-    line-height: 142%;
-    color: var(--white-text);
-    height: 80px;
-    max-width: 545px;
-    padding-left: 30px;
-    margin-top: 10px;
+
+.card-content {
+    align-self: end;
 }
-
-.card3 h2, .card4 h2 {
-    margin-top: 401px;
-}
-
-.card3 p, .card4 p {
-    margin-bottom: 17px;
-
-}
-
 
 .circled {
     padding: 5px 10px 5px 4px;
@@ -160,11 +153,10 @@ h2 {
     letter-spacing: 0.4px;
     width: 143px;
     height: 42px;
-    margin-left: 30px;
-    margin-bottom: 30px;
     align-items: center;
     display: flex;
     color: var(--black);
+    background: var(--white);
     border-radius: var(--border-button);
 }
 
