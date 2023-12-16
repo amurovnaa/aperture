@@ -36,55 +36,6 @@ body {
   padding: 0 24px;
 }
 
-header {
-  background-color: $light-black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-header {
-  .header-flex {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    color: white;
-    justify-content: space-between;
-    height: 90px;
-  }
-
-  .header-links a:first-child {
-    margin-right: 24px;
-    font-size: 13px;
-  }
-
-  .header-links {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    font-size: 15px;
-    color: $white;
-
-    .header-links .btn {
-      min-width: 155px;
-    }
-
-    .btn {
-      font-size: 16px;
-      padding: 11px 20px 13px;
-      letter-spacing: 0.4px;
-      color: $black;
-      border-radius: 14px;
-    }
-
-    .btn-header {
-      background: $white;
-    }
-  }
-}
-
 body {
   @media (max-width: 750px) {
     .container {

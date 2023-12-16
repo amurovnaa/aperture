@@ -4,7 +4,7 @@ body a {
   transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 body a:hover {
-  box-shadow: inset 150px 0 0 0 rosybrown;
+  box-shadow: inset 150px 2px 2px 2px rosybrown;
   color: white;
 }
 body .btn-header {
@@ -15,6 +15,126 @@ body .btn-header:hover, body .circled:hover, body .btn-long:hover {
   background: white;
 }
 
+header {
+  background-color: #181818;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.btn-header {
+  font-size: 16px;
+  padding: 11px 20px 13px;
+  letter-spacing: 0.4px;
+  color: black;
+  background: white;
+  border-radius: 14px;
+  min-width: 155px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: white;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 15px;
+  color: white;
+  visibility: hidden;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  float: right;
+}
+
+.hamburger-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  z-index: 1;
+  width: 24px;
+}
+
+.hamburger-line::before, .hamburger-line::after {
+  background: var(--white);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamburger-line::before {
+  top: 5px;
+}
+
+.hamburger-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ .header-links {
+  visibility: unset;
+  height: 100vh;
+  background: #181818;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 89px;
+  transition: all 0.1s ease-in-out;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line {
+  background: #181818;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 912px) {
+  .hamburger {
+    display: none;
+  }
+  .header-links a:first-child {
+    margin-right: 24px;
+    font-size: 13px;
+  }
+  .header-links {
+    visibility: unset;
+    position: relative;
+    padding-top: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    flex-direction: row;
+    top: 0;
+  }
+}
 @media (max-width: 965px) {
   .footer .logo {
     max-width: 400px;
@@ -46,7 +166,7 @@ body .btn-header:hover, body .circled:hover, body .btn-long:hover {
     width: 100%;
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: center;
     flex-direction: column;
   }
   .sec-6 .sec6-flex .sec6-part2 {
@@ -79,6 +199,9 @@ body .btn-header:hover, body .circled:hover, body .btn-long:hover {
   }
   .sec4 .sec4-content {
     padding: 10px;
+  }
+  .sec6-part1 p {
+    text-align: left;
   }
   .footer-part1 {
     flex-direction: column;
@@ -131,48 +254,6 @@ body {
   max-width: 1248px;
   margin: 0 auto;
   padding: 0 24px;
-}
-
-header {
-  background-color: #181818;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-header .header-flex {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  color: white;
-  justify-content: space-between;
-  height: 90px;
-}
-header .header-links a:first-child {
-  margin-right: 24px;
-  font-size: 13px;
-}
-header .header-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  font-size: 15px;
-  color: white;
-}
-header .header-links .header-links .btn {
-  min-width: 155px;
-}
-header .header-links .btn {
-  font-size: 16px;
-  padding: 11px 20px 13px;
-  letter-spacing: 0.4px;
-  color: black;
-  border-radius: 14px;
-}
-header .header-links .btn-header {
-  background: white;
 }
 
 @media (max-width: 750px) {
