@@ -57,12 +57,11 @@ header {
 }
 
 .header-links {
-  display: flex;
   align-items: center;
   gap: 32px;
   font-size: 15px;
   color: $white;
-  visibility: hidden;
+  display: none
 }
 
 .hamburger {
@@ -104,7 +103,7 @@ header {
 }
 
 .side-menu:checked ~ .header-links {
-  visibility: unset;
+  display: flex;
   height: 100vh;
   background: $light-black;
   flex-direction: column;
@@ -112,8 +111,9 @@ header {
   width: 100%;
   right: 0;
   top: 89px;
-  transition: all 0.3s ease-out;
+  transition: width 0.3s ease-out;
 }
+
 
 .side-menu:checked ~ .hamburger .hamburger-line {
   background: $light-black;
@@ -132,19 +132,16 @@ header {
 
 @media (min-width: 912px) {
 
-
   .hamburger {
     display: none;
   }
-
   .header-links a:first-child {
     margin-right: 24px;
     font-size: 13px;
   }
 
   .header-links {
-    visibility: unset;
-
+    display: flex;
     position: relative;
     padding-top: 0;
     height: auto;
