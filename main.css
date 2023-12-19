@@ -59,7 +59,7 @@ header {
 }
 
 .hamburger-line {
-  background: var(--white);
+  background: black;
   display: block;
   height: 2px;
   position: relative;
@@ -68,7 +68,7 @@ header {
 }
 
 .hamburger-line::before, .hamburger-line::after {
-  background: var(--white);
+  background: white;
   content: "";
   display: block;
   height: 100%;
