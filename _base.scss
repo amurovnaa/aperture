@@ -1,6 +1,6 @@
 body {
   a {
-    box-shadow: inset 1px 0 black;
+    box-shadow: inset 0 0 0 0 rosybrown;
     color: white;
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 
@@ -16,7 +16,7 @@ body {
   }
 
   .btn-header:hover, .circled:hover, .btn-long:hover {
-    border: 3px solid black;
+    border: 3px solid rosybrown;
     background: white;
   }
 }
